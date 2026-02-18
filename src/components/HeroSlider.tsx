@@ -20,7 +20,7 @@ const slides: Slide[] = [
     id: 1,
     image: heroTools,
     tag: 'ON THE EDGE',
-    title: 'ИНСТРУМЕНТЫ\nВЫСШЕГО КАЧЕСТВА',
+    title: 'ТОЧНОСТЬ\nБЕЗ  КОМПРОМИССОВ',
     subtitle: 'Инновации и надёжность для вашего производства',
     cta: 'Узнать больше',
     href: '#about',
