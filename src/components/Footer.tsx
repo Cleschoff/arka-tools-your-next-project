@@ -40,7 +40,10 @@ export const Footer = () => {
               Качество, точность, надёжность.
             </p>
             <div className="space-y-3">
-              <a href="tel:+74951234567" className="flex items-center gap-3 text-footer-foreground/70 hover:text-primary transition-colors">+7 (4922) 77-10-20
+              <a href="tel:+74951234567" className="flex items-center gap-3 transition-colors text-muted-foreground">
+
++7 (4922) 77-10-20
+
                 <Phone className="w-4 h-4" />
                 +7 (495) 123-45-67
               </a>
@@ -63,14 +66,11 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-2">
               {footerLinks.products.map((link) => <li key={link.label}>
-                  <a
-                  href={link.href}
-                  className="text-footer-foreground/70 hover:text-primary transition-colors text-sm">
+                  <a href={link.href} className="text-footer-foreground/70 hover:text-primary transition-colors text-sm">
 
                     {link.label}
                   </a>
-                </li>
-              )}
+                </li>)}
             </ul>
           </div>
 

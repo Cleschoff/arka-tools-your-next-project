@@ -15,8 +15,8 @@ export const Industries = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-primary">
-              ОТРАСЛИ <span className="text-primary-foreground">П</span>РИМЕНЕНИЯ
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-muted">
+              ОТРАСЛИ <span className="text-primary">П</span>РИМЕНЕНИЯ
             </h2>
             <p className="text-background/70 text-lg mb-8 max-w-xl">
               Наши инструменты используются ведущими производственными предприятиями 
