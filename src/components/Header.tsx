@@ -35,13 +35,13 @@ export const Header = () => {
             <span className="opacity-50">|</span>
             <button className="opacity-70 hover:opacity-100 transition-opacity">​</button>
           </div>
-          <a
-            href="#shop"
-            className="flex items-center gap-2 text-primary font-semibold hover:opacity-80 transition-opacity">
+          
 
-            <ShoppingCart className="w-3.5 h-3.5" />
-            ARKA.SHOP
-          </a>
+
+
+
+
+
         </div>
       </div>
 

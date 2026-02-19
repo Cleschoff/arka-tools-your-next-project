@@ -3,24 +3,24 @@ import arkaLogo from '@/assets/arka-logo.png';
 
 const footerLinks = {
   products: [
-    { label: 'Токарные инструменты', href: '#turning' },
-    { label: 'Фрезерные инструменты', href: '#milling' },
-    { label: 'Сверление', href: '#drilling' },
-    { label: 'Отрезка и канавки', href: '#grooving' },
-    { label: 'Все продукты', href: '#catalog' },
-  ],
+  { label: 'Токарные инструменты', href: '#turning' },
+  { label: 'Фрезерные инструменты', href: '#milling' },
+  { label: 'Сверление', href: '#drilling' },
+  { label: 'Отрезка и канавки', href: '#grooving' },
+  { label: 'Все продукты', href: '#catalog' }],
+
   company: [
-    { label: 'О компании', href: '#about' },
-    { label: 'Карьера', href: '#careers' },
-    { label: 'Новости', href: '#news' },
-    { label: 'Партнёры', href: '#partners' },
-  ],
+  { label: 'О компании', href: '#about' },
+  { label: 'Карьера', href: '#careers' },
+  { label: 'Новости', href: '#news' },
+  { label: 'Партнёры', href: '#partners' }],
+
   support: [
-    { label: 'Контакты', href: '#contact' },
-    { label: 'Загрузки', href: '#downloads' },
-    { label: 'Техподдержка', href: '#support' },
-    { label: 'FAQ', href: '#faq' },
-  ],
+  { label: 'Контакты', href: '#contact' },
+  { label: 'Загрузки', href: '#downloads' },
+  { label: 'Техподдержка', href: '#support' },
+  { label: 'FAQ', href: '#faq' }]
+
 };
 
 export const Footer = () => {
@@ -30,17 +30,17 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Logo and info */}
           <div className="lg:col-span-2">
-            <img 
-              src={arkaLogo} 
-              alt="ARKA Tools" 
-              className="h-12 w-auto mb-6 brightness-0 invert"
-            />
+            <img
+              src={arkaLogo}
+              alt="ARKA Tools"
+              className="h-12 w-auto mb-6 brightness-0 invert" />
+
             <p className="text-footer-foreground/70 mb-6 max-w-sm">
               Инновационные режущие инструменты для профессиональной металлообработки. 
               Качество, точность, надёжность.
             </p>
             <div className="space-y-3">
-              <a href="tel:+74951234567" className="flex items-center gap-3 text-footer-foreground/70 hover:text-primary transition-colors">
+              <a href="tel:+74951234567" className="flex items-center gap-3 text-footer-foreground/70 hover:text-primary transition-colors">+7 (4922) 77-10-20
                 <Phone className="w-4 h-4" />
                 +7 (495) 123-45-67
               </a>
@@ -50,7 +50,8 @@ export const Footer = () => {
               </a>
               <div className="flex items-start gap-3 text-footer-foreground/70">
                 <MapPin className="w-4 h-4 mt-0.5" />
-                <span>Москва, ул. Промышленная, 1</span>
+                <span>600001 Владимир, Быковский пр-д, 3А
+                </span>
               </div>
             </div>
           </div>
@@ -61,16 +62,15 @@ export const Footer = () => {
               Продукция
             </h4>
             <ul className="space-y-2">
-              {footerLinks.products.map((link) => (
-                <li key={link.label}>
+              {footerLinks.products.map((link) => <li key={link.label}>
                   <a
-                    href={link.href}
-                    className="text-footer-foreground/70 hover:text-primary transition-colors text-sm"
-                  >
+                  href={link.href}
+                  className="text-footer-foreground/70 hover:text-primary transition-colors text-sm">
+
                     {link.label}
                   </a>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
@@ -80,16 +80,16 @@ export const Footer = () => {
               Компания
             </h4>
             <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
-                <li key={link.label}>
+              {footerLinks.company.map((link) =>
+              <li key={link.label}>
                   <a
-                    href={link.href}
-                    className="text-footer-foreground/70 hover:text-primary transition-colors text-sm"
-                  >
+                  href={link.href}
+                  className="text-footer-foreground/70 hover:text-primary transition-colors text-sm">
+
                     {link.label}
                   </a>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
@@ -99,16 +99,16 @@ export const Footer = () => {
               Поддержка
             </h4>
             <ul className="space-y-2">
-              {footerLinks.support.map((link) => (
-                <li key={link.label}>
+              {footerLinks.support.map((link) =>
+              <li key={link.label}>
                   <a
-                    href={link.href}
-                    className="text-footer-foreground/70 hover:text-primary transition-colors text-sm"
-                  >
+                  href={link.href}
+                  className="text-footer-foreground/70 hover:text-primary transition-colors text-sm">
+
                     {link.label}
                   </a>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
         </div>
@@ -117,8 +117,8 @@ export const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-footer-foreground/10">
         <div className="section-container py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-footer-foreground/50 text-sm">
-            © 2024 ARKA Tools. Все права защищены.
+          <p className="text-footer-foreground/50 text-sm">© 2026 ARKA-Tools. Все права защищены.
+
           </p>
           <div className="flex gap-6">
             <a href="#privacy" className="text-footer-foreground/50 hover:text-primary transition-colors text-sm">
@@ -130,6 +130,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };

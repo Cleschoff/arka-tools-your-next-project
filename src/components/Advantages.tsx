@@ -1,27 +1,27 @@
 import { Target, Shield, Zap, Award } from 'lucide-react';
 
 const advantages = [
-  {
-    icon: Target,
-    title: 'Точность',
-    description: 'Допуски до ±0.001 мм для безупречного качества обработки',
-  },
-  {
-    icon: Shield,
-    title: 'Надёжность',
-    description: 'Стабильные результаты благодаря высококачественным материалам',
-  },
-  {
-    icon: Zap,
-    title: 'Производительность',
-    description: 'Увеличение скорости резания до 40% по сравнению с аналогами',
-  },
-  {
-    icon: Award,
-    title: 'Качество',
-    description: 'Сертификация ISO 9001 и строгий контроль на всех этапах',
-  },
-];
+{
+  icon: Target,
+  title: 'Точность',
+  description: 'Допуски до ±0.001 мм для безупречного качества обработки'
+},
+{
+  icon: Shield,
+  title: 'Надёжность',
+  description: 'Стабильные результаты благодаря высококачественным материалам'
+},
+{
+  icon: Zap,
+  title: 'Производительность',
+  description: 'Увеличение скорости резания до 40% по сравнению с аналогами'
+},
+{
+  icon: Award,
+  title: 'Качество',
+  description: 'Сертификация ISO 9001 и строгий контроль на всех этапах'
+}];
+
 
 export const Advantages = () => {
   return (
@@ -37,11 +37,11 @@ export const Advantages = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {advantages.map((advantage, index) => (
-            <div
-              key={index}
-              className="text-center group"
-            >
+          {advantages.map((advantage, index) =>
+          <div
+            key={index}
+            className="text-center group">
+
               <div className="w-20 h-20 mx-auto mb-6 bg-background border border-border flex items-center justify-center group-hover:border-primary transition-colors">
                 <advantage.icon className="w-10 h-10 text-primary" />
               </div>
@@ -52,13 +52,13 @@ export const Advantages = () => {
                 {advantage.description}
               </p>
             </div>
-          ))}
+          )}
         </div>
 
         {/* Stats */}
         <div className="mt-16 pt-16 border-t border-border grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-black text-primary mb-2">25+</div>
+            <div className="text-4xl md:text-5xl font-black text-primary mb-2">15+</div>
             <div className="text-sm uppercase tracking-wider text-muted-foreground">Лет опыта</div>
           </div>
           <div className="text-center">
@@ -66,7 +66,7 @@ export const Advantages = () => {
             <div className="text-sm uppercase tracking-wider text-muted-foreground">Клиентов</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-black text-primary mb-2">10K+</div>
+            <div className="text-4xl md:text-5xl font-black text-primary mb-2">20K+</div>
             <div className="text-sm uppercase tracking-wider text-muted-foreground">Артикулов</div>
           </div>
           <div className="text-center">
@@ -75,6 +75,6 @@ export const Advantages = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
