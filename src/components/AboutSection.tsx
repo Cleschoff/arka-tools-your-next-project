@@ -35,19 +35,19 @@ export const AboutSection = () => {
 
           <div className="relative">
             <div className="bg-secondary p-12 flex items-center justify-center min-h-[400px]">
-              <img 
-                src={arkaLogo} 
-                alt="ARKA Tools" 
-                className="max-w-[300px] w-full"
-              />
+              <img
+                src={arkaLogo}
+                alt="ARKA Tools"
+                className="max-w-[300px] w-full" />
+
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 max-w-[200px]">
-              <div className="text-3xl font-black mb-1">25+</div>
+              <div className="text-3xl font-black mb-1">15+</div>
               <div className="text-sm">лет на рынке инструмента</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
