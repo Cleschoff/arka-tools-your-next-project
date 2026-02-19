@@ -19,7 +19,7 @@ export const ContactSection = () => {
             <div className="space-y-4">
               <div>
                 <span className="text-primary-foreground/60 text-sm">Телефон</span>
-                <div className="text-xl font-semibold">+7 (495) 123-45-67</div>
+                <div className="text-xl font-semibold">+7 (4922) 77-10-20 </div>
               </div>
               <div>
                 <span className="text-primary-foreground/60 text-sm">Email</span>
@@ -43,11 +43,11 @@ export const ContactSection = () => {
               </div>
               <Input placeholder="Email" type="email" className="bg-secondary border-0" />
               <Input placeholder="Телефон" type="tel" className="bg-secondary border-0" />
-              <Textarea 
-                placeholder="Сообщение" 
-                rows={4} 
-                className="bg-secondary border-0 resize-none"
-              />
+              <Textarea
+                placeholder="Сообщение"
+                rows={4}
+                className="bg-secondary border-0 resize-none" />
+
               <Button type="submit" className="w-full" size="lg">
                 Отправить запрос
               </Button>
@@ -55,6 +55,6 @@ export const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
