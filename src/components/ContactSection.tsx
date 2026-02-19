@@ -27,7 +27,8 @@ export const ContactSection = () => {
               </div>
               <div>
                 <span className="text-primary-foreground/60 text-sm">Адрес</span>
-                <div className="text-xl font-semibold">Москва, ул. Промышленная, 1</div>
+                <div className="text-xl font-semibold">600001 Владимир, Быковский пр-д, 3А
+                </div>
               </div>
             </div>
           </div>
@@ -43,10 +44,9 @@ export const ContactSection = () => {
               </div>
               <Input placeholder="Email" type="email" className="bg-secondary border-0" />
               <Input placeholder="Телефон" type="tel" className="bg-secondary border-0" />
-              <Textarea
-                placeholder="Сообщение"
-                rows={4}
-                className="bg-secondary border-0 resize-none" />
+              <Textarea placeholder="Сообщение"
+              rows={4}
+              className="bg-secondary border-0 resize-none" />
 
               <Button type="submit" className="w-full" size="lg">
                 Отправить запрос
